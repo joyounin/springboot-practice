@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @SpringBootApplication
 public class MyWebApplication {
@@ -13,7 +12,7 @@ public class MyWebApplication {
 	public class HelloController{
 		@RequestMapping("/hello")
 		public String hello() {
-			return "/WEB-INF/views/hello.jsp";
+			return "hello";
 		}
 	}
 	
